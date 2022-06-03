@@ -16,7 +16,7 @@ FROM tb_Processo as pro
 INNER JOIN tb_Andamento as an
 ON pro.idProcesso = an.idProcesso
 WHERE year(DtEncerramento) = 2013
-GROUP BY nroProcesso
+GROUP BY nroProcesso;
 
 
 /*3.Com base no modelo acima, construa um comando SQL que liste a quantidade de Data de 
@@ -33,4 +33,4 @@ fazer para apresenta-lo com 12 caracteres considerando os zeros a esquerda?*/
 
 /*Passo 1.*/ alter table tb_Processo modify nroProcesso int(12) zerofill;
 
-/*Passo 2.*/ select * from tb_Processo
+/*Passo 2.*/ select * from tb_Processo;
