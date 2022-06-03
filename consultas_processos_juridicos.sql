@@ -31,6 +31,6 @@ HAVING data_encerramento > 5;
 com zero à esquerda, contudo nosso modelo e dados ele é apresentado como bigint. Como 
 fazer para apresenta-lo com 12 caracteres considerando os zeros a esquerda?*/ 
 
-Passo 1. alter table tb_Processo modify nroProcesso int(12) zerofill;
+/*Passo 1.*/ alter table tb_Processo modify nroProcesso int(12) zerofill;
 
-Passo 2. select * from tb_Processo
+/*Passo 2.*/ select * from tb_Processo
